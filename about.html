@@ -2,329 +2,156 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <meta name="description" content="마곡 유흥 꿀팁: 형님들을 위한 리얼 후기, 숨은 맛집, 핫플 총정리. 마곡에서 진짜 놀고 싶다면 이거 하나로 끝. 전화 010-6279-0862">
-  <meta name="keywords" content="마곡 유흥, 마곡 술집, 마곡 꿀팁, 마곡 놀거리, 마곡 유흥 정보, t3b07, bro">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://t3b07-mg-night-tip.vercel.app">
-  <meta property="og:title" content="마곡 유흥 꿀팁 | 형님들 다 모여라">
-  <meta property="og:description" content="마곡 유흥 꿀팁: 형님들을 위한 리얼 후기, 숨은 맛집, 핫플 총정리. 마곡에서 진짜 놀고 싶다면 이거 하나로 끝. 전화 010-6279-0862">
-  <title>마곡 유흥 꿀팁 | 정보</title>
+  <title>마곡 유흥 정보</title>
+  <meta name="description" content="마곡에서 유흥을 즐기려는 순간, 언제 어떤 선택을 해야 할지 빠르게 파악할 수 있는 실전 팁을 제공합니다. 미리 정하면 유리한 항목, 당일 결정 가능한 항목, 시간대별 변동 요소까지 상세히 안내합니다.">
+  <meta name="keywords" content="마곡 유흥, 마곡 나이트 가이드, 마곡 클럽 팁, 마곡 바 선택, 마곡 유흥 꿀팁">
+  <link rel="canonical" href="https://magok-night-guide.namanavi.com/about.html">
+  <meta property="og:title" content="마곡 유흥 꿀팁 — 순간 결정에 필요한 가이드">
+  <meta property="og:description" content="마곡 유흥을 빠르게 파악하고 가장 효율적인 선택을 할 수 있는 실전 팁을 확인하세요.">
+  <meta property="og:url" content="https://magok-night-guide.namanavi.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://magok-night-guide.namanavi.c">
   <style>
-    /* RESET & BASE */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    /* 기본 타이포그래피 */
+    :root{
+      --font-sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+      --color-primary:#ff4d4f;
+      --color-bg:#0a0a0a;
+      --color-text:#f5f5f5;
+      --spacing-unit:1rem;
     }
-    html {
-      scroll-behavior: smooth;
-      background: #0b0e14;
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      background-color:var(--color-bg);
+      color:var(--color-text);
+      line-height:1.6;
     }
-    body {
-      font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;
-      background: #0b0e14;
-      color: #e5e9f0;
-      line-height: 1.6;
-      min-height: 100vh;
-      border-left: 12px solid #ff2a6d;
-      border-right: 12px solid #05d9e8;
-      padding: 0 20px;
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:var(--spacing-unit);
+      background:rgba(0,0,0,0.6);
     }
-    a {
-      color: #05d9e8;
-      text-decoration: none;
-      border-bottom: 2px solid #ff2a6d;
-      transition: 0.2s;
+    header .logo{
+      font-size:1.5rem;
+      font-weight:bold;
+      color:var(--color-primary);
     }
-    a:hover {
-      background: #ff2a6d;
-      color: #0b0e14;
-      border-bottom-color: #05d9e8;
+    header .menu-btn{
+      display:none;
+      cursor:pointer;
     }
-    ul {
-      list-style: none;
+    nav{
+      background:rgba(0,0,0,0.8);
     }
-    /* TYPOGRAPHY */
-    h1, h2, h3, h4 {
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      text-transform: uppercase;
+    nav ul{
+      list-style:none;
+      display:flex;
+      margin:0;
+      padding:0;
     }
-    h1 {
-      font-size: clamp(2.4rem, 8vw, 4.8rem);
-      line-height: 0.95;
-      color: #ff2a6d;
-      text-shadow: 6px 6px 0 #05d9e8, 10px 10px 0 rgba(255, 42, 109, 0.3);
-      margin-bottom: 24px;
+    nav li a{
+      display:block;
+      padding:var(--spacing-unit);
+      color:var(--color-text);
+      text-decoration:none;
     }
-    h2 {
-      font-size: 2.2rem;
-      color: #05d9e8;
-      border-left: 12px solid #ff2a6d;
-      padding-left: 16px;
-      margin: 48px 0 24px 0;
+    nav li a:hover{
+      background:var(--color-primary);
     }
-    h3 {
-      font-size: 1.6rem;
-      color: #ffb800;
-      margin-bottom: 12px;
+    .hero{
+      text-align:center;
+      padding:4rem var(--spacing-unit);
+      background:linear-gradient(135deg, #ff4d4f, #000);
     }
-    p, li, blockquote {
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: #c0c8d8;
+    .hero h1{
+      font-size:2.5rem;
+      margin-bottom:1rem;
     }
-    .mono {
-      font-family: 'JetBrains Mono', 'Courier New', monospace;
-      letter-spacing: -0.02em;
-      background: #1e222b;
-      padding: 0 6px;
-      color: #05d9e8;
+    .hero p{
+      font-size:1.2rem;
     }
-    /* LAYOUT CONTAINER */
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 20px 16px 60px;
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:var(--spacing-unit);
     }
-    @media (max-width: 768px) {
-      body {
-        border-left: 6px solid #ff2a6d;
-        border-right: 6px solid #05d9e8;
-        padding: 0 12px;
-      }
-      h1 {
-        text-shadow: 3px 3px 0 #05d9e8, 5px 5px 0 rgba(255, 42, 109, 0.2);
-      }
-      h2 {
-        font-size: 1.8rem;
-        border-left-width: 8px;
-        padding-left: 10px;
-      }
-      .container {
-        padding: 12px 8px 40px;
-      }
+    section{
+      margin-bottom:3rem;
     }
-    /* BRUTALIST 컴포넌트 — 네비게이션 */
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 0 16px;
-      border-bottom: 4px solid #ff2a6d;
-      margin-bottom: 20px;
-      background: #0b0e14;
-      position: relative;
+    section h2{
+      font-size:2rem;
+      margin-bottom:0.5rem;
+      position:relative;
+      padding-bottom:0.5rem;
     }
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      font-weight: 700;
-      text-transform: uppercase;
+    section h2::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:0;
+      width:3rem;
+      height:3px;
+      background:var(--color-primary);
     }
-    .nav-links a {
-      font-size: 1.2rem;
-      border-bottom: 3px solid transparent;
-      padding: 4px 0;
+    section p{
+      margin-bottom:1rem;
     }
-    .nav-links a:hover {
-      border-bottom-color: #ff2a6d;
-      background: none;
-      color: #ff2a6d;
-    }
-    .hamburger-menu {
-      display: none;
-      font-size: 2rem;
-      background: none;
-      border: 2px solid #05d9e8;
-      color: #05d9e8;
-      padding: 4px 14px;
-      cursor: pointer;
-    }
-    .tel-link {
-      background: #ff2a6d;
-      color: #0b0e14;
-      padding: 8px 22px;
-      font-weight: 800;
-      font-size: 1.3rem;
-      border: none;
-      border-radius: 0;
-      box-shadow: 6px 6px 0 #05d9e8;
-      transition: 0.2s;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .tel-link:hover {
-      box-shadow: 2px 2px 0 #05d9e8;
-      transform: translate(4px, 4px);
-      background: #05d9e8;
-      color: #0b0e14;
-    }
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 8px;
-        padding-top: 16px;
-      }
-      .nav-links a {
-        font-size: 1.4rem;
-        border-bottom: 2px solid #05d9e8;
-        padding: 8px 0;
-      }
-      .hamburger-menu {
-        display: block;
-      }
-      .nav-links.active {
-        display: flex;
-      }
-      nav {
-        flex-wrap: wrap;
-      }
-      .tel-link {
-        margin-top: 8px;
-        width: 100%;
-        text-align: center;
-      }
-    }
-    /* BRUTALIST 컴포넌트 — 카드, 리스트, 블록 */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-      margin: 32px 0;
-    }
-    .card {
-      background: #141822;
-      border: 3px solid #05d9e8;
-      padding: 24px 18px;
-      box-shadow: 10px 10px 0 #ff2a6d;
-      transition: 0.2s;
-    }
-    .card:hover {
-      box-shadow: 4px 4px 0 #ff2a6d;
-      transform: translate(6px, 6px);
-    }
-    .card h3 {
-      margin-top: 0;
-      border-bottom: 3px solid #ff2a6d;
-      padding-bottom: 6px;
-    }
-    .card p {
-      margin-top: 12px;
-    }
-    .faq-item {
-      border-left: 6px solid #ffb800;
-      padding: 16px 20px;
-      margin: 24px 0;
-      background: #10131c;
-    }
-    .faq-item strong {
-      color: #ff2a6d;
-      font-size: 1.3rem;
-      display: block;
-      margin-bottom: 6px;
-    }
-    .signature-block {
-      background: #1b1f2b;
-      padding: 28px 24px;
-      border: 4px dashed #ff2a6d;
-      margin: 48px 0 20px;
-      text-align: center;
-    }
-    .signature-block .mono {
-      font-size: 1.6rem;
-      background: #0b0e14;
-      display: inline-block;
-      padding: 12px 28px;
-      border: 2px solid #05d9e8;
-    }
-    hr {
-      border: 0;
-      border-top: 6px dotted #ff2a6d;
-      margin: 40px 0;
+    @media (max-width:768px){
+      nav ul{flex-direction:column;}
+      .hero h1{font-size:2rem;}
     }
   </style>
 </head>
 <body>
-<div class="container">
-  <!-- 네비게이션 (전체 페이지 공통) -->
+  <header>
+    <div class="logo">마곡 나이트 가이드</div>
+    <div class="menu-btn">☰</div>
+  </header>
   <nav>
-    <div style="display: flex; align-items: center; gap: 12px;">
-      <span style="font-size: 2rem; font-weight: 900; color: #05d9e8;">T3B07</span>
-    </div>
-    <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
-    <div class="nav-links">
-      <a href="/">홈</a>
-      <a href="/info">정보</a>
-      <a href="/hotplaces">핫플</a>
-      <a href="/map">지도</a>
-    </div>
-    <a href="tel:01062790862" class="tel-link">☎ 010-6279-0862</a>
+    <ul>
+      <li><a href="/index.html">홈</a></li>
+      <li><a href="/guide.html">가이드</a></li>
+      <li><a href="/tips.html">팁</a></li>
+      <li><a href="/contact.html">연락처</a></li>
+    </ul>
   </nav>
+  <section class="hero">
+    <h1>마곡 유흥 정보</h1>
+    <p>마곡의 밤을 제대로 즐기기 위한 핵심 데이터를 한눈에 제공. 상황별 최적 선택을 바로 확인하세요.</p>
+  </section>
+  <div class="container">
+    <section>
+      <h2>시간대별 전략</h2>
+      <p>밤 8시 이전은 바와 라운지 중심으로 움직이는 것이 효율적입니다. 이때는 입장료가 저렴하고, 분위기가 비교적 조용해 대화에 집중할 수 있습니다. 특히, 저녁 초반에 도착하면 사전 예약이 필요 없는 곳을 쉽게 찾을 수 있어 즉흥적인 모임에 적합합니다.</p>
+      <p>밤 10시부터 새벽 2시 사이에는 클럽과 대형 바가 활기를 띕니다. 이 구간에서는 DJ 라인업과 이벤트가 집중되므로, 사전에 해당 클럽의 공식 SNS를 확인해 라인업을 파악하고, 인기 트랙이 흐르는 순간을 노려 입장하는 것이 좋습니다. 또한, 이 시간대는 인파가 많아 대기 시간이 늘어날 수 있으니, 대기 시간을 최소화하려면 사전 대기 리스트에 미리 등록해 두는 전략도 유용합니다.</p>
+    </section>
 
-  <!-- 페이지 고유 콘텐츠: 정보 + 지역 시그널 -->
-  <h1>마곡 유흥 꿀팁<br>정보 창고</h1>
+    <section>
+      <h2>인원수에 따른 최적 장소</h2>
+      <p>소규모(2~4인) 모임은 분위기가 차분한 바나 라운지를 선택하세요. 이때는 좌석이 제한된 경우가 많아, 미리 좌석 예약 여부를 확인하고, 인접한 테이블을 활용해 프라이버시를 유지하는 것이 좋습니다. 또한, 작은 그룹은 고급 위스키나 칵테일을 감상할 수 있는 곳에서 분위기를 즐기는 것이 더욱 만족스럽습니다.</p>
+      <p>대규모(5인 이상) 그룹은 넓은 무대가 있는 클럽이나 대형 펍을 선호합니다. 이러한 장소는 대규모 인원을 수용할 수 있는 공간과 다양한 음료 옵션을 제공하며, 사전 입장권을 구매하면 인원을 제한하는 정책을 피할 수 있습니다. 특히, 대형 클럽에서는 VIP 라운지를 미리 예약해 전용 좌석과 전용 바 서비스를 이용하면 전체적인 체류 경험이 크게 향상됩니다.</p>
+    </section>
 
-  <p style="font-size: 1.6rem; font-weight: 700; color: #ffb800; margin-bottom: 8px;">형님, 여기 다 있다.</p>
-  <p>마곡에서 진짜 노는 방법, 리얼 후기, 숨은 스팟. 아래 정보는 <span class="mono">T3B07 CREW</span>가 직접 발로 뛰고 입으로 확인한 것들이다. 가벼운 마음으로 보지 마라. 이 정보는 형님들만을 위한 거다.</p>
+    <section>
+      <h2>목적별 장소 선택 가이드</h2>
+      <p>네트워킹이 목적인 경우, 비즈니스 라운지나 하이엔드 바를 추천합니다. 이곳은 조용한 음악과 고급 음료가 제공되어 대화에 집중할 수 있는 환경을 제공하며, 비즈니스 카드 교환이나 협업 논의에 최적화된 분위기를 갖추고 있습니다.</p>
+      <p>순수한 파티와 댄스를 즐기고 싶다면, 최신 사운드 시스템과 라이트 쇼가 갖춰진 클럽을 선택하세요. 클럽마다 특색 있는 테마 파티가 진행되므로, 사전에 SNS를 통해 테마 정보를 확인하고, 테마에 맞는 복장을 준비하면 현장 분위기에 한층 더 몰입할 수 있습니다.</p>
+    </section>
 
-  <!-- 섹션: 현지인만 아는 시간표 -->
-  <h2>⏰ 마곡 골든타임</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>🔥 18:00 – 20:00</h3>
-      <p>야근 끝! 마곡 중앙공원 쪽 <strong>‘형님 포차’</strong> 오픈런. 삼겹살에 소주 한잔, 사장님이 서비스로 주는 <span class="mono">전어회</span>는 덤. 자리 없으면 기다려야 함.</p>
-    </div>
-    <div class="card">
-      <h3>⚡ 20:30 – 22:30</h3>
-      <p>마곡역 3번 출구 50m, 지하 ‘루프탑 바(가성비 킹)’. 칵테일 3잔에 2만5천원. 여기서 정보교환. 가끔 <strong>실제 유흥 관계자</strong>도 스며든다.</p>
-    </div>
-    <div class="card">
-      <h3>🌙 23:00 – 새벽</h3>
-      <p>진짜들은 <span class="mono">‘더 그레이트 홀’</span>로 이동. 간판 없는 주점, 입구에 검은 철문. 노래방+룸+와인. 예약 필수. 전화번호는 위에 있다.</p>
-    </div>
+    <section>
+      <h2>FAQ</h2>
+      <p><strong>Q1. 마곡에서 늦은 시간에도 영업하는 바가 있나요?</strong><br>
+      네, 마곡의 일부 라운지와 클럽은 새벽 4시까지 연장 영업합니다. 연장 영업 여부는 각 장소의 공식 홈페이지나 SNS를 통해 사전 확인이 필요합니다.</p>
+
+      <p><strong>Q2. 대규모 파티를 위한 사전 예약 방법은?</strong><br>
+      대규모 파티는 대부분 온라인 티켓 플랫폼을 통해 사전 예약이 가능합니다. 조기 구매 시 할인 혜택이 제공되는 경우가 많으니, 해당 이벤트 페이지를 주시하면서 미리 예매하는 것이 현명합니다.</p>
+
+      <p><strong>Q3. 안전하게 이동하려면 어떤 교통수단을 이용해야 할까요?</strong><br>
+      마곡은 지하철 5호선과 여러 버스 노선이 교차하는 교통 허브입니다. 특히, 늦은 시간에는 택시보다 카카오 T와 같은 호출 서비스가 더 안전하고 빠른 이동 수단이 될 수 있습니다.</p>
+    </section>
   </div>
-
-  <!-- 숨은 맛집 + 시그널 -->
-  <h2>🥩 형님 인정 맛집 3</h2>
-  <ul style="margin-bottom: 28px;">
-    <li style="padding: 12px 0; border-bottom: 2px solid #ff2a6d;"><strong>1. 마곡 소곱창 ‘원조곱’</strong> — 직화구이, 냄새 제로. 사장님이 직접 재운 곱창. “야, 이 집은 형님들만 안다.”</li>
-    <li style="padding: 12px 0; border-bottom: 2px solid #ff2a6d;"><strong>2. 중국집 ‘용성’</strong> — 짬뽕국물에 소주 타 먹는 게 국룰. 현지 유흥업소 직원들이 단골. 새벽 2시까지.</li>
-    <li style="padding: 12px 0; border-bottom: 2px solid #ff2a6d;"><strong>3. ‘할매김치찌개’</strong> — 해장 필수코스. 24시간. 전화하면 <span class="mono">“야! 들어와!”</span> 하는 할머니의 주문법이 포인트.</li>
-  </ul>
-
-  <!-- FAQ 형식으로 진짜 정보 -->
-  <h2>🎯 마곡 유흥 꿀팽</h2>
-  <div class="faq-item">
-    <strong>Q. 마곡에서 룸 빡시게 놀려면?</strong>
-    <p>마곡 ‘M타운’ 지하 1층, 간판 없는 검은문. 010-6279-0862로 전화해서 <span class="mono">“T3B07 소개”</span>라고 말해라. 입구에서부터 형님 대접. 병당 3만원대, 여기는 <strong>아는 사람만</strong> 들어온다.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Q. 첫 방문인데 분위기 좋은 곳?</strong>
-    <p>마곡나루역 4번 출구 ‘오션스 바’ — 칵테일 바인데 반주에 안주가 장난 아님. 브루탈리스트 감성 인테리어, 벽에 <span class="mono">“이곳은 핑프 금지”</span>라고 써 있다. 형님들은 거기서 미팅 자주 가짐.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Q. 마곡 유흥 꿀팁 단톡방 있나?</strong>
-    <p>있고 말고. 전화해서 <strong>“브로, 단톡방 링크 좀”</strong> 하면 바로 보내준다. 단, 실물 인증 필수. 가짜들은 걸러낸다. <span class="mono">#마곡_리얼</span> 해시태그만 검색해도 반은 간다.</p>
-  </div>
-
-  <!-- 지도 시그널 / 로컬 정보 -->
-  <hr>
-  <h2>📍 마곡 지하 벙커 (진짜 지도)</h2>
-  <div style="background: #141822; padding: 24px; border: 4px solid #ffb800;">
-    <p><span class="mono">[좌표]</span> 37.5602° N, 126.8255° E — 마곡역 3번 출구에서 도보 3분, 편의점 옆 골목 안으로 50m, 빨간 벽돌 건물 2층. 초인종 2번 길게 누르고 <strong>“T3B07”</strong>라고 말하면 문 열어준다. (형님 전용)</p>
-    <p style="margin-top: 14px;">📌 이거 없으면 마곡 유흥 반쪽만 즐기는 거다. 진짜는 <strong>정보</strong>를 아는 자의 것.</p>
-  </div>
-
-  <!-- 시그니처 브로 메시지 -->
-  <div class="signature-block">
-    <div class="mono">#T3B07 #마곡유흥꿀팁 #형님들</div>
-    <p style="margin-top: 18px; font-size: 1.3rem;">"정보는 곧 힘이다. 마곡에서 제대로 놀고 싶으면 이 페이지를 북마크해라. 전화 한 통이면 모든 게 연결된다."</p
 </body>
 </html>
